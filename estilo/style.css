@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+:root{
+    --White: aliceblue;
+    --Green: hsl(154, 59%, 51%);
+    --LightGreen: hsla(153, 62%, 53%, 0.781);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+    --red: hsl(0, 85%, 60%); 
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-image: url(../images/bg-intro-desktop.png);
+    background-size: cover;
+    background-color: var(--red);
+    font-family: 'Poppins';
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+#description{
+    text-align: start;
+    color: var(--White);
+    width: 500px;
+}
+
+#title{
+    font-size: 3em;
+}
+
+#description p {
+    font-weight: 200;
+}
+
+#section-form{
+    width: 500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input{
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--GrayishBlue);
+    font-size: 0.9em;
+    outline-color: var(--Blue);
+}
+
+#free-trial{
+    background-color: var(--Blue);
+    color: var(--White);
+    font-weight: bold;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 0.9em;
+    padding: 15px;
+    margin: 15px 0 15px 0;
+}
+
+#free-trial span{
+    font-weight: 200;
+}
+
+#btn-free-trial{
+    background-color: var(--Green);
+    color: var(--White);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 0.8em;
+    padding: 15px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#btn-free-trial:hover{
+    background-color: var(--LightGreen);
+}
+
+#terms{
+    text-align: center;
+    font-size: 0.7em;
+    color: var(--GrayishBlue);
+    margin-top: 2px;
+}
+
+#terms a{
+    text-decoration: none;
+    color: var(--red);
+    font-weight: bold;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: var(--DarkBlue); font-weight: bold; }
