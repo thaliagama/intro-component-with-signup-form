@@ -21,11 +21,24 @@
 
     <section id="section-form">
       <p id="free-trial">Try it free 7 days <span>then $20/mo. thereafter</span></p>
-      <form name="form">
-        <input type="text" placeholder="First Name"></input>
-        <input type="text" placeholder="Last Name"></input>
-        <input type="email" placeholder="Email Address"></input>
-        <input type="password" placeholder="Password"></input>
+      <form>
+        <div>
+          <input type="text" placeholder="First Name" class="inputs" oninput="nameValidate()"></input>
+          <span class="span-required">Please, use at least 3 characters</span>
+        </div>
+        <div>
+          <input type="text" placeholder="Last Name" class="inputs" oninput="lastNameValidate()"></input>
+          <span class="span-required">Please, use at least 3 characters</span>
+        </div>
+        <div>
+          <input type="email" placeholder="Email Address" class="inputs" oninput="emailValidate()"></input>
+          <span class="span-required">Please type a valid email</span>
+        </div>
+        <div>
+          <input type="password" placeholder="Password" class="inputs" oninput="passwordValidate()"></input>
+          <span class="span-required">Please, use at least 8 characters</span>
+        </div>
+
         <button type="submit" id="btn-free-trial">Claim your free trial</button>
         <p id="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </form>

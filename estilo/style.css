@@ -58,13 +58,26 @@ form{
     border-radius: 5px;
 }
 
-input{
+form div{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs{
     padding: 15px;
-    margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid var(--GrayishBlue);
     font-size: 0.9em;
     outline-color: var(--Blue);
+}
+
+
+.span-required{
+    display: none;
+    font-size: 0.8em;
+    color: var(--red);
+    margin: 2px 0 0 4px;
 }
 
 #free-trial{
